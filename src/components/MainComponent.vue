@@ -207,12 +207,46 @@
           </div>
         </div>
       </div>
-
-
     </section>
-    <section class="new-arrival container">
-    
-
+    <section class="new-arrival container debug">
+      <div class="title">
+        <h2>New products arrival</h2>
+        <p>Latest products</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="../assets/img/product-8.jpg" alt="" />
+          <p>Colored pet bed</p>
+          <p class="price">$18.00 - $26.00</p>
+        </div>
+        <div class="card">
+          <img src="../assets/img/product-8.jpg" alt="" />
+          <p>Colored pet bed</p>
+          <p class="price">$18.00 - $26.00</p>
+        </div>
+        <div class="card">
+          <img src="../assets/img/product-8.jpg" alt="" />
+          <p>Colored pet bed</p>
+          <p class="price">$18.00 - $26.00</p>
+        </div>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="../assets/img/product-8.jpg" alt="" />
+          <p>Colored pet bed</p>
+          <p class="price">$18.00 - $26.00</p>
+        </div>
+        <div class="card">
+          <img src="../assets/img/product-8.jpg" alt="" />
+          <p>Colored pet bed</p>
+          <p class="price">$18.00 - $26.00</p>
+        </div>
+        <div class="card">
+          <img src="../assets/img/product-8.jpg" alt="" />
+          <p>Colored pet bed</p>
+          <p class="price">$18.00 - $26.00</p>
+        </div>
+      </div>
     </section>
   </main>
 </template>
@@ -533,5 +567,30 @@ export default {
   font-size: 30px;
   padding-bottom: 10px;
 }
+.new-arrival {
+  width: 100%;
+  padding: 50px 0px;
+  height: 140vh;
+}
+.new-arrival .title {
+  line-height: 3rem;
+  text-align: center;
+}
+.new-arrival .title p {
+  color: green;
+}
 
+.new-arrival .cards {
+  width: 100%;
+
+  display: flex;
+  text-align: center;
+  padding: 10px;
+}
+.new-arrival .card {
+  padding: 15px;
+}
+.new-arrival .card img {
+  width: 100%;
+}
 </style>
