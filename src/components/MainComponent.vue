@@ -98,32 +98,122 @@
       <!-- < -->
       <div class="cards container">
         <div class="card">
-          <img src="../assets/img/avatar-3.jpg" alt="">
+          <img src="../assets/img/avatar-3.jpg" alt="" />
           <p>
-          Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.
-       </p>
-       <p>Lisa Smith, ThemeFusion</p>
-
+            Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
+            nulla quis nunc, tincidunt eu. Eu.
+          </p>
+          <p>Lisa Smith, ThemeFusion</p>
         </div>
 
         <div class="card">
-          <img src="../assets/img/avatar-3.jpg" alt="">
+          <img src="../assets/img/avatar-3.jpg" alt="" />
           <p>
-          Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.
-       </p>
-       <p>Lisa Smith, ThemeFusion</p>
+            Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
+            nulla quis nunc, tincidunt eu. Eu.
+          </p>
+          <p>Lisa Smith, ThemeFusion</p>
         </div>
 
-
         <div class="card">
-          <img src="../assets/img/avatar-3.jpg" alt="">
+          <img src="../assets/img/avatar-3.jpg" alt="" />
           <p>
-          Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut nulla quis nunc, tincidunt eu. Eu.
-       </p>
-       <p>Lisa Smith, ThemeFusion</p>
-</div>
+            Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
+            nulla quis nunc, tincidunt eu. Eu.
+          </p>
+          <p>Lisa Smith, ThemeFusion</p>
+        </div>
       </div>
     </div>
+    <div class="newsletter container debug">
+      <div class="newsletter-container debug">
+        <div class="text">
+          <h2>Join our newsletter</h2>
+          <p>
+            Volutpat vel turpis nulla lorem sed semper. Aliquam sagittis sem
+            libero viverra vehicula nullam ut nisl.
+          </p>
+          <div class="input">
+            <input type="text" placeholder="Insert your email...*" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+        <div class="img">
+          <img src="../assets/img/banner-7-2x-scaled.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="best-tricks">
+      <div class="title">
+        <h2>Get the best tips &#38; tricks</h2>
+        <p>Recent articles</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="../assets/img/blog-1.jpg" alt="" />
+          <p>How to loose leash malk' your dog</p>
+          <p class="date">April 21st,2020</p>
+        </div>
+        <div class="card">
+          <img src="../assets/img/blog-1.jpg" alt="" />
+          <p>How to loose leash malk' your dog</p>
+          <p class="date">April 21st,2020</p>
+        </div>
+        <div class="card">
+          <img src="../assets/img/blog-1.jpg" alt="" />
+          <p>How to loose leash malk' your dog</p>
+          <p class="date">April 21st,2020</p>
+        </div>
+        <div class="card">
+          <img src="../assets/img/blog-1.jpg" alt="" />
+          <p>How to loose leash malk' your dog</p>
+          <p class="date">April 21st,2020</p>
+        </div>
+      </div>
+      <div class="button">
+        <button>Read all articles</button>
+      </div>
+    </div>
+    <section class="main-card debug">
+      <div class="img debug">
+        <div class="left-img debug">
+          <p>Find the best animal supplies</p>
+          <h3>Popular acessories</h3>
+          <button>View all toys acessories</button>
+        </div>
+        <div class="right-img debug">
+          <p>Find the best food</p>
+          <h3>New food arrival</h3>
+          <button>Vew all food arrival</button>
+        </div>
+      </div>
+      <div class="main-card-bottom">
+        <div class="options debug">
+          <div class="option">
+            <i class="fa-solid fa-truck"></i>
+            <p>Free worldwide delivries</p>
+          </div>
+          <div class="option">
+            <i class="fa-solid fa-map"></i>
+            <p>Find stores near your</p>
+          </div>
+          <div class="option">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <p>Best prices guarranteed</p>
+          </div>
+          <div class="option">
+            <i class="fa-solid fa-credit-card"></i>
+            <p>All credit card accepted</p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="new-arrival container">
+    
+
+    </section>
   </main>
 </template>
 
@@ -281,37 +371,35 @@ export default {
   background-size: contain;
   padding: 10px;
 }
-.section2 .cards h5{
+.section2 .cards h5 {
   font-weight: 400;
   font-size: 17px;
 }
-.section2 .cards p{
+.section2 .cards p {
   color: gray;
   font-size: 15px;
   margin: 10px 0;
 }
-.section2 .cards p span{
-font-size: 12px;
-text-decoration: line-through;
+.section2 .cards p span {
+  font-size: 12px;
+  text-decoration: line-through;
 }
 .users-testimonilas {
-text-align: center;
-height: 60vh;
-padding-top: 60px;
- background: #042d04;
+  text-align: center;
+  height: 60vh;
+  padding-top: 60px;
+  background: #042d04;
   background-image: url(../assets/img/bg-transparent-3.png);
   color: white;
 }
-.users-testimonilas h2{
+.users-testimonilas h2 {
   margin-bottom: 50px;
 }
 
-.users-testimonilas .cards{
+.users-testimonilas .cards {
   display: flex;
   justify-content: center;
   text-align: center;
-
-
 }
 .users-testimonilas .cards img {
   width: 150px;
@@ -319,6 +407,131 @@ padding-top: 60px;
   padding: 10px;
   border-radius: 50%;
   margin: 0 auto;
+}
+.newsletter {
+  position: relative;
+}
+.newsletter-container {
+  position: absolute;
+  top: -40px;
+  z-index: 100;
+  background-color: white;
+  display: flex;
+
+  height: 300px;
+  width: 100%;
+}
+.newsletter .text {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  overflow: hidden;
+  z-index: 100;
+  padding: 20px 0px 20px 20px;
+}
+.newsletter .text h2 {
+  font-size: 30px;
+}
+.newsletter .text input {
+  border-radius: 30px;
+  padding: 7px 20px;
+  border: 0px;
+  background-color: lightgray;
+}
+.newsletter .text button {
+  padding: 7px 20px;
+  border-radius: 30px;
+  margin: 10px;
+  color: white;
+  background-color: #54b33c;
+  border: 0px;
+  cursor: pointer;
+}
+.newsletter .img {
+  width: 50%;
+}
+.newsletter img {
+  background-size: contain;
+  height: 100%;
+  float: right;
+}
+.best-tricks {
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 300px;
+}
+.best-tricks .title {
+  text-align: center;
+  line-height: 2rem;
+}
+.best-tricks .cards {
+  display: flex;
+}
+.best-tricks .card {
+  padding: 15px;
+}
+.best-tricks .card img {
+  width: 100%;
+}
+.best-tricks .card p {
+  padding: 5px;
+}
+.best-tricks .card .date {
+  font-size: 10px;
+}
+.best-tricks .button {
+  text-align: center;
+  margin: 20px;
+}
+.best-tricks .button button {
+  background-color: green;
+  color: white;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 0px;
+  cursor: pointer;
+}
+.main-card {
+  height: 60vh;
+}
+.main-card .img {
+  display: flex;
+  width: 100%;
+  height: 40vh;
+  line-height: 3rem;
+  color: white;
+}
+.main-card .img .left-img {
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  padding: 50px 0;
+  background-image: url(../assets/img/banner-8-2x.jpg);
+  background-size: cover;
+}
+.main-card .img .right-img {
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  padding: 50px 0;
+  background-image: url(../assets/img/banner-8-2x.jpg);
+  background-size: cover;
+}
+.main-card-bottom {
+  background-color: green;
+  color: white;
+}
+.main-card-bottom .options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20vh;
+  text-align: center;
+}
+.main-card-bottom .options i {
+  font-size: 30px;
+  padding-bottom: 10px;
 }
 
 </style>
