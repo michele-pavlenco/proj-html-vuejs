@@ -38,13 +38,13 @@
           <div class="card">
             <h3>Moist</h3>
             <p>Canned dog food</p>
-            <img src="../assets/img/food-transparent-18.png" alt="" />
+            <img src="../assets/img/food-transparent-17.png" alt="" />
             <button>Shop moist food</button>
           </div>
           <div class="card">
             <h3>Frozen</h3>
             <p>Freeze-Dried dog food</p>
-            <img src="../assets/img/food-transparent-18.png" alt="" />
+            <img src="../assets/img/food-transparent-16.png" alt="" />
             <button>Shop frozen food</button>
           </div>
         </div>
@@ -56,7 +56,7 @@
           <button>Learn more about us</button>
         </section>
         <section class="section2">
-          <div class="text debug">
+          <div class="text ">
             <div class="left">
               <p>All-time best sellers</p>
               <h2>Items evryone loves</h2>
@@ -65,7 +65,7 @@
               <button>Vew all products</button>
             </div>
           </div>
-          <div class="cards debug">
+          <div class="cards ">
             <div class="card">
               <img src="../assets/img/product-21.jpg" alt="" />
               <h5>trasport cage</h5>
@@ -93,7 +93,7 @@
         </section>
       </div>
     </div>
-    <div class="users-testimonilas debug">
+    <div class="users-testimonilas ">
       <h2>Users testimonials</h2>
       <!-- < -->
       <div class="cards container">
@@ -107,7 +107,7 @@
         </div>
 
         <div class="card">
-          <img src="../assets/img/avatar-3.jpg" alt="" />
+          <img src="../assets/img/avatar-1.jpg" alt="" />
           <p>
             Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
             nulla quis nunc, tincidunt eu. Eu.
@@ -116,7 +116,7 @@
         </div>
 
         <div class="card">
-          <img src="../assets/img/avatar-3.jpg" alt="" />
+          <img src="../assets/img/avatar-4-400x400.jpg" alt="" />
           <p>
             Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
             nulla quis nunc, tincidunt eu. Eu.
@@ -155,17 +155,17 @@
           <p class="date">April 21st,2020</p>
         </div>
         <div class="card">
-          <img src="../assets/img/blog-1.jpg" alt="" />
+          <img src="../assets/img/blog-2.jpg" alt="" />
           <p>How to loose leash malk' your dog</p>
           <p class="date">April 21st,2020</p>
         </div>
         <div class="card">
-          <img src="../assets/img/blog-1.jpg" alt="" />
+          <img src="../assets/img/blog-3.jpg" alt="" />
           <p>How to loose leash malk' your dog</p>
           <p class="date">April 21st,2020</p>
         </div>
         <div class="card">
-          <img src="../assets/img/blog-1.jpg" alt="" />
+          <img src="../assets/img/blog-4.jpg" alt="" />
           <p>How to loose leash malk' your dog</p>
           <p class="date">April 21st,2020</p>
         </div>
@@ -220,31 +220,31 @@
           <p class="price">$18.00 - $26.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-8.jpg" alt="" />
+          <img src="../assets/img/product-2.jpg" alt="" />
           <p>Colored pet bed</p>
-          <p class="price">$18.00 - $26.00</p>
+          <p class="price">$29.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-8.jpg" alt="" />
+          <img src="../assets/img/product-3.jpg" alt="" />
           <p>Colored pet bed</p>
-          <p class="price">$18.00 - $26.00</p>
+          <p class="price">$18.00</p>
         </div>
       </div>
       <div class="cards">
         <div class="card">
-          <img src="../assets/img/product-8.jpg" alt="" />
+          <img src="../assets/img/product-4.jpg" alt="" />
           <p>Colored pet bed</p>
-          <p class="price">$18.00 - $26.00</p>
+          <p class="price">$29.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-8.jpg" alt="" />
+          <img src="../assets/img/product-5.jpg" alt="" />
           <p>Colored pet bed</p>
-          <p class="price">$18.00 - $26.00</p>
+          <p class="price">$35.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-8.jpg" alt="" />
+          <img src="../assets/img/product-10.jpg" alt="" />
           <p>Colored pet bed</p>
-          <p class="price">$18.00 - $26.00</p>
+          <p class="price">$16.00</p>
         </div>
       </div>
     </section>
@@ -549,7 +549,7 @@ export default {
   text-align: center;
   height: 100%;
   padding: 50px 0;
-  background-image: url(../assets/img/banner-8-2x.jpg);
+  background-image: url(../assets/img/banner-9-2x.jpg);
   background-size: cover;
 }
 .main-card-bottom {
