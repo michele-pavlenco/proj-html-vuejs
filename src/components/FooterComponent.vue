@@ -43,10 +43,10 @@
         <div class="footer-2">
           <div class="else">
             <ul>
-              <li>home</li>
-              <li>about</li>
-              <li>blog</li>
-              <li>contact</li>
+              <li>Home</li>
+              <li>About</li>
+              <li>Blog</li>
+              <li>Contact</li>
               <li>Shop</li>
             </ul>
           </div>
@@ -74,10 +74,11 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../style/vars.scss";
 .footer-top {
   width: 100%;
   height: 60vh;
-  background-color: green;
+  background-color: $green;
   color: white;
   padding: 40px 0;
 }
@@ -102,14 +103,21 @@ export default {
 }
 .footer-1 li:first-child {
   font-size: 20px;
+  &:hover {
+        text-decoration: none;
+      }
 }
 .footer-1 li {
   line-height: 2rem;
   list-style-type: none;
   font-size: 15px;
+  cursor: pointer;
+&:hover {
+        text-decoration: underline;
+      }
 }
 .footer-1 .subscribe {
-  background-color: rgb(15, 72, 15);
+  background-color:  $green2;
   background-image: url(../assets/img/bg-transparent-3.png);
   height: 200px;
   width: 200px;
@@ -119,11 +127,11 @@ export default {
     padding: 10px 5px;
     border-radius: 30px;
     border:0px;
-    margin: 20px 0px;
+    margin: 15px 0px;
     width: 100%;
   }
   button{
-    background-color:greenyellow;
+    background-color: green;
    width: 100%;
    padding: 10px 5px;
     border-radius: 30px;
@@ -141,6 +149,10 @@ export default {
     }
     li{
       padding: 20px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 .footer-bottom{

@@ -56,7 +56,7 @@
           <button>Learn more about us</button>
         </section>
         <section class="section2">
-          <div class="text ">
+          <div class="text">
             <div class="left">
               <p>All-time best sellers</p>
               <h2>Items evryone loves</h2>
@@ -65,7 +65,7 @@
               <button>Vew all products</button>
             </div>
           </div>
-          <div class="cards ">
+          <div class="cards">
             <div class="card">
               <img src="../assets/img/product-21.jpg" alt="" />
               <h5>trasport cage</h5>
@@ -93,7 +93,7 @@
         </section>
       </div>
     </div>
-    <div class="users-testimonilas ">
+    <div class="users-testimonilas">
       <h2>Users testimonials</h2>
       <!-- < -->
       <div class="cards container">
@@ -103,30 +103,30 @@
             Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
             nulla quis nunc, tincidunt eu. Eu.
           </p>
-          <p>Lisa Smith, ThemeFusion</p>
+          <p class="name">Lisa Smith, ThemeFusion</p>
         </div>
 
         <div class="card">
           <img src="../assets/img/avatar-1.jpg" alt="" />
           <p>
-            Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
-            nulla quis nunc, tincidunt eu. Eu.
+            Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget
+            felis porttitor volutpat vestibulum ac diam sit.
           </p>
-          <p>Lisa Smith, ThemeFusion</p>
+          <p class="name">Melissa Green, ThemeFusion</p>
         </div>
 
         <div class="card">
           <img src="../assets/img/avatar-4-400x400.jpg" alt="" />
           <p>
-            Auctor est habitasse amet nunc, interdum vel mattis sodales cras. Ut
-            nulla quis nunc, tincidunt eu. Eu.
+            Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+            Proin eget tortor risus vestibulum ante ipsum.
           </p>
-          <p>Lisa Smith, ThemeFusion</p>
+          <p class="name">Sam Lewis, ThemeFusion</p>
         </div>
       </div>
     </div>
-    <div class="newsletter container debug">
-      <div class="newsletter-container debug">
+    <div class="newsletter container">
+      <div class="newsletter-container">
         <div class="text">
           <h2>Join our newsletter</h2>
           <p>
@@ -150,23 +150,36 @@
       </div>
       <div class="cards">
         <div class="card">
-          <img src="../assets/img/blog-1.jpg" alt="" />
+          <div class="img">
+            <img src="../assets/img/blog-1.jpg" alt="" />
+            <div class="hover-text">How to loose leash walk your dog</div>
+          </div>
           <p>How to loose leash malk' your dog</p>
           <p class="date">April 21st,2020</p>
         </div>
+
         <div class="card">
-          <img src="../assets/img/blog-2.jpg" alt="" />
-          <p>How to loose leash malk' your dog</p>
+          <div class="img">
+            <img src="../assets/img/blog-2.jpg" alt="" />
+            <div class="hover-text">Stop cats from scratching furniture</div>
+          </div>
+          <p>Stop cats from scratching furniture</p>
           <p class="date">April 21st,2020</p>
         </div>
         <div class="card">
-          <img src="../assets/img/blog-3.jpg" alt="" />
-          <p>How to loose leash malk' your dog</p>
+          <div class="img">
+            <img src="../assets/img/blog-3.jpg" alt="" />
+            <div class="hover-text">Where to buy the best pet food</div>
+          </div>
+          <p>Where to buy the best pet food</p>
           <p class="date">April 21st,2020</p>
         </div>
         <div class="card">
-          <img src="../assets/img/blog-4.jpg" alt="" />
-          <p>How to loose leash malk' your dog</p>
+           <div class="img">
+            <img src="../assets/img/blog-4.jpg" alt="" />
+            <div class="hover-text">Proper care for tour per toys</div>
+          </div>
+          <p>Proper care for tour per toys</p>
           <p class="date">April 21st,2020</p>
         </div>
       </div>
@@ -174,21 +187,21 @@
         <button>Read all articles</button>
       </div>
     </div>
-    <section class="main-card debug">
-      <div class="img debug">
-        <div class="left-img debug">
+    <section class="main-card">
+      <div class="img">
+        <div class="left-img">
           <p>Find the best animal supplies</p>
           <h3>Popular acessories</h3>
           <button>View all toys acessories</button>
         </div>
-        <div class="right-img debug">
+        <div class="right-img">
           <p>Find the best food</p>
           <h3>New food arrival</h3>
           <button>Vew all food arrival</button>
         </div>
       </div>
       <div class="main-card-bottom">
-        <div class="options debug">
+        <div class="options">
           <div class="option">
             <i class="fa-solid fa-truck"></i>
             <p>Free worldwide delivries</p>
@@ -208,7 +221,7 @@
         </div>
       </div>
     </section>
-    <section class="new-arrival container debug">
+    <section class="new-arrival container">
       <div class="title">
         <h2>New products arrival</h2>
         <p>Latest products</p>
@@ -258,6 +271,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../style/vars.scss";
 // .part1 {
 //   height: 100vh;
 // }
@@ -272,6 +286,10 @@ export default {
   margin: 20px 20%;
   font-weight: 100;
   font-size: 15px;
+  &:hover {
+    color: $green2;
+    cursor: default;
+  }
 }
 .part1 .browse-category .cards1 {
   display: flex;
@@ -280,6 +298,7 @@ export default {
   width: calc(100% / 1);
   background-size: contain;
   padding: 10px;
+  cursor: pointer;
 }
 .part1 .browse-category .card {
   text-align: center;
@@ -289,16 +308,19 @@ export default {
   margin: 80px 0;
 }
 .part1 .cards2 .card {
-  background: #2a382a;
+  background-color: $green;
   background-image: url(../assets/img/bg-transparent-3.png);
-  //background-image: linear-gradient(to bottom, #2a382a ,url(../assets/img/bg-transparent-3.png));
-  //background-color: linear-gradient( 180 #2a382a);
+
   margin: 10px;
   padding: 40px 0;
   display: flex;
   justify-content: center;
   flex-flow: column;
   align-items: center;
+  transition: transform 0.5s;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .part1 .cards2 .card img {
   width: 60%;
@@ -308,10 +330,10 @@ export default {
   font-size: 30px;
 }
 .part1 .cards2 p {
-  color: #77ab82;
+  color: $green2;
 }
 .part1 .cards2 button {
-  background-color: #77ab82;
+  background-color: $green2;
   color: white;
   padding: 10px 15px;
   border-radius: 30px;
@@ -319,6 +341,7 @@ export default {
   font-size: 12px;
   cursor: pointer;
 }
+
 .section1 {
   background-image: url(../assets/img/banner-3-2x-scaled.jpg);
   width: 100%;
@@ -355,6 +378,11 @@ export default {
   border: 0px;
   color: gray;
   cursor: pointer;
+  transition: background-color 0.5s;
+  &:hover {
+    background-color: $green;
+    color: white;
+  }
 }
 .section1::after {
   display: block;
@@ -422,9 +450,15 @@ export default {
   text-align: center;
   height: 60vh;
   padding-top: 60px;
-  background: #042d04;
+  background: $green;
   background-image: url(../assets/img/bg-transparent-3.png);
   color: white;
+  p {
+    margin: 10px 30px;
+  }
+  .name {
+    color: grey;
+  }
 }
 .users-testimonilas h2 {
   margin-bottom: 50px;
@@ -447,7 +481,7 @@ export default {
 }
 .newsletter-container {
   position: absolute;
-  top: -40px;
+  top: -5vh;
   z-index: 100;
   background-color: white;
   display: flex;
@@ -478,9 +512,13 @@ export default {
   border-radius: 30px;
   margin: 10px;
   color: white;
-  background-color: #54b33c;
+  background-color: $green2;
+  transition: background-color 0.5s;
   border: 0px;
   cursor: pointer;
+  &:hover {
+    background-color: $green;
+  }
 }
 .newsletter .img {
   width: 50%;
@@ -504,9 +542,31 @@ export default {
 }
 .best-tricks .card {
   padding: 15px;
+  position: relative;
+  .hover-text {
+    position: absolute;
+    top: 25%;
+    color: $green2;
+    width: 130px;
+    display: none;
+  }
+}
+.best-tricks .card {
+  &:hover .hover-text {
+    display: block;
+  }
+  &:hover img {
+    filter: sepia(50%) blur(5px);
+  }
+}
+.best-tricks .card .img {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .best-tricks .card img {
   width: 100%;
+  transition: filter 0.5s;
 }
 .best-tricks .card p {
   padding: 5px;
@@ -519,7 +579,7 @@ export default {
   margin: 20px;
 }
 .best-tricks .button button {
-  background-color: green;
+  background-color: $green2;
   color: white;
   border-radius: 30px;
   padding: 10px 20px;
@@ -528,6 +588,15 @@ export default {
 }
 .main-card {
   height: 60vh;
+  button {
+    background-color: white;
+
+    color: black;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 0px;
+    cursor: pointer;
+  }
 }
 .main-card .img {
   display: flex;
@@ -535,6 +604,7 @@ export default {
   height: 40vh;
   line-height: 3rem;
   color: white;
+  
 }
 .main-card .img .left-img {
   width: 50%;
@@ -543,6 +613,9 @@ export default {
   padding: 50px 0;
   background-image: url(../assets/img/banner-8-2x.jpg);
   background-size: cover;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 .main-card .img .right-img {
   width: 50%;
@@ -551,9 +624,13 @@ export default {
   padding: 50px 0;
   background-image: url(../assets/img/banner-9-2x.jpg);
   background-size: cover;
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 .main-card-bottom {
-  background-color: green;
+  background-color:$green;
+  background-image: url(../assets/img/bg-transparent-3.png);
   color: white;
 }
 .main-card-bottom .options {
@@ -577,7 +654,7 @@ export default {
   text-align: center;
 }
 .new-arrival .title p {
-  color: green;
+  color: $green2;
 }
 
 .new-arrival .cards {
