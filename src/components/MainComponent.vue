@@ -175,7 +175,7 @@
           <p class="date">April 21st,2020</p>
         </div>
         <div class="card">
-           <div class="img">
+          <div class="img">
             <img src="../assets/img/blog-4.jpg" alt="" />
             <div class="hover-text">Proper care for tour per toys</div>
           </div>
@@ -228,39 +228,83 @@
       </div>
       <div class="cards">
         <div class="card">
-          <img src="../assets/img/product-8.jpg" alt="" />
+          <div class="img">
+            <img src="../assets/img/product-8.jpg" alt="" />
+            <div class="hover-text">
+              <i class="fa-solid fa-square-check"></i><br />
+              vew cart
+            </div>
+          </div>
+
           <p>Colored pet bed</p>
           <p class="price">$18.00 - $26.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-2.jpg" alt="" />
+          <div class="img">
+            <img src="../assets/img/product-2.jpg" alt="" />
+            <div class="hover-text">
+              <i class="fa-solid fa-square-check"></i><br />
+              vew cart
+            </div>
+          </div>
+
           <p>Colored pet bed</p>
           <p class="price">$29.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-3.jpg" alt="" />
+          <div class="img">
+            <img src="../assets/img/product-3.jpg" alt="" />
+            <div class="hover-text">
+              <i class="fa-solid fa-square-check"></i><br />
+              vew cart
+            </div>
+          </div>
+
           <p>Colored pet bed</p>
           <p class="price">$18.00</p>
         </div>
       </div>
       <div class="cards">
         <div class="card">
-          <img src="../assets/img/product-4.jpg" alt="" />
+          <div class="img">
+            <img src="../assets/img/product-4.jpg" alt="" />
+            <div class="hover-text">
+              <i class="fa-solid fa-square-check"></i><br />
+              vew cart
+            </div>
+          </div>
+
           <p>Colored pet bed</p>
           <p class="price">$29.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-5.jpg" alt="" />
+          <div class="img">
+            <img src="../assets/img/product-5.jpg" alt="" />
+            <div class="hover-text">
+              <i class="fa-solid fa-square-check"></i><br />
+              vew cart
+            </div>
+          </div>
+
           <p>Colored pet bed</p>
           <p class="price">$35.00</p>
         </div>
         <div class="card">
-          <img src="../assets/img/product-10.jpg" alt="" />
+          <div class="img">
+            <img src="../assets/img/product-10.jpg" alt="" />
+            <div class="hover-text">
+              <i class="fa-solid fa-square-check"></i><br />
+              vew cart
+            </div>
+          </div>
+
           <p>Colored pet bed</p>
           <p class="price">$16.00</p>
         </div>
       </div>
     </section>
+    <a href="#top" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+    <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
   </main>
 </template>
 
@@ -604,7 +648,6 @@ export default {
   height: 40vh;
   line-height: 3rem;
   color: white;
-  
 }
 .main-card .img .left-img {
   width: 50%;
@@ -613,7 +656,9 @@ export default {
   padding: 50px 0;
   background-image: url(../assets/img/banner-8-2x.jpg);
   background-size: cover;
-  &:hover{
+  filter: grayscale(50%);
+  transition: transform 0.4s;
+  &:hover {
     transform: scale(1.1);
   }
 }
@@ -623,13 +668,15 @@ export default {
   height: 100%;
   padding: 50px 0;
   background-image: url(../assets/img/banner-9-2x.jpg);
+
   background-size: cover;
-  &:hover{
+  transition: transform 0.4s;
+  &:hover {
     transform: scale(1.1);
   }
 }
 .main-card-bottom {
-  background-color:$green;
+  background-color: $green;
   background-image: url(../assets/img/bg-transparent-3.png);
   color: white;
 }
@@ -656,18 +703,103 @@ export default {
 .new-arrival .title p {
   color: $green2;
 }
-
 .new-arrival .cards {
   width: 100%;
-
   display: flex;
   text-align: center;
   padding: 10px;
 }
 .new-arrival .card {
   padding: 15px;
+  position: relative;
+  .hover-text {
+    position: absolute;
+    top: 40%;
+    color: $green2;
+    width: 130px;
+    display: none;
+    margin-left: 30%;
+
+    cursor: pointer;
+  }
+  i {
+    font-size: 50px;
+  }
+
+  &:hover .hover-text {
+    display: block;
+  }
+  &:hover img {
+    filter: sepia(70%);
+  }
+  .price {
+    color: gray;
+    margin-top: 10px;
+    font-size: 15px;
+  }
 }
 .new-arrival .card img {
   width: 100%;
+}
+.top {
+  right: 10px;
+  bottom: 20px;
+  position: fixed;
+  background-color: gray;
+  padding: 10px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 4s linear;
+  i {
+    font-size: 30px;
+    color: $green2;
+  }
+}
+.cart {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  background-color: rgb(215, 215, 215);
+  width: 70px;
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 10px;
+
+  &:hover {
+    animation-name: change;
+    animation-duration: 0.5s;
+    animation-delay: -0s;
+    color: green;
+  }
+
+  i {
+    font-size: 30px;
+    cursor: pointer;
+    color: $green;
+  }
+  @keyframes change {
+    0% {
+      color: green;
+      right: 10px;
+      top: 100px;
+    }
+    50% {
+      color: green;
+      right: 10px;
+      top: 80px;
+    }
+    100% {
+      color: green;
+      right: 10px;
+      top: 100px;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 </style>
