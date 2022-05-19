@@ -316,12 +316,7 @@ export default {
 
 <style lang="scss">
 @import "../style/vars.scss";
-// .part1 {
-//   height: 100vh;
-// }
-.part1 .browse-category {
-  //height: 180vh;
-}
+
 .part1 .browse-category .title {
   margin: 80px auto;
   text-align: center;
@@ -330,10 +325,7 @@ export default {
   margin: 20px 20%;
   font-weight: 100;
   font-size: 15px;
-  &:hover {
-    color: $green2;
-    cursor: default;
-  }
+  
 }
 .part1 .browse-category .cards1 {
   display: flex;
@@ -343,9 +335,13 @@ export default {
   background-size: contain;
   padding: 10px;
   cursor: pointer;
+
 }
 .part1 .browse-category .card {
-  text-align: center;
+  text-align: center;  &:hover {
+    color: $green2;
+    cursor: default;
+  }
 }
 .part1 .cards2 {
   display: flex;
@@ -385,7 +381,6 @@ export default {
   font-size: 12px;
   cursor: pointer;
 }
-
 .section1 {
   background-image: url(../assets/img/banner-3-2x-scaled.jpg);
   width: 100%;
@@ -507,7 +502,6 @@ export default {
 .users-testimonilas h2 {
   margin-bottom: 50px;
 }
-
 .users-testimonilas .cards {
   display: flex;
   justify-content: center;
@@ -661,6 +655,9 @@ export default {
   &:hover {
     transform: scale(1.1);
   }
+  h3{
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(2, 2, 2), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
+  }
 }
 .main-card .img .right-img {
   width: 50%;
@@ -673,6 +670,9 @@ export default {
   transition: transform 0.4s;
   &:hover {
     transform: scale(1.1);
+  }
+  h3{
+    text-shadow: 2px 0 0 rgb(0, 0, 0), -2px 0 0 rgb(2, 2, 2), 0 2px 0 rgb(0, 0, 0), 0 -2px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
   }
 }
 .main-card-bottom {
@@ -719,13 +719,11 @@ export default {
     width: 130px;
     display: none;
     margin-left: 30%;
-
     cursor: pointer;
   }
   i {
     font-size: 50px;
   }
-
   &:hover .hover-text {
     display: block;
   }
@@ -774,7 +772,6 @@ export default {
     animation-delay: -0s;
     color: green;
   }
-
   i {
     font-size: 30px;
     cursor: pointer;
@@ -798,7 +795,6 @@ export default {
     }
   }
 }
-
 html {
   scroll-behavior: smooth;
 }

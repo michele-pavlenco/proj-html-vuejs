@@ -27,7 +27,7 @@
       </nav>
     </div>
     <div class="jumbotron">
-      <div class="jumbotron-top debug container">
+      <div class="jumbotron-top  container">
         <span>
           <i class="fa-solid fa-map"></i>
           <p>Internetional</p>
@@ -144,6 +144,11 @@ nav {
 .navoptions {
   margin: 14px;
   font-size: 14px;
+    cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+
+  }
 }
 .jumbotron {
   background-image: url(../assets/img/bg-transparent-3.png);
@@ -174,6 +179,8 @@ nav {
   widows: 100%;
   font-size: 13px;
   z-index: 100;
+  position: relative;
+
 }
 .jumbotron i {
   margin: 0px 5px 0px 5px;
@@ -181,6 +188,7 @@ nav {
 .jumbotron-top span {
   display: flex;
   font-weight: 10;
+  cursor: pointer;
 }
 .jumbotron-top p {
   font-weight: bold;
